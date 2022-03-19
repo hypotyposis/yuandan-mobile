@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 0vh;
+}
+.swiper .swiperItemVideo {
+  display: flex;
+  height: 100vh;
+}
+.swiper .swiperItemPicture {
+  display: flex;
+  height: 60vh;
+}
+.swiper .swiperItemPicture .vodContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.swiper .swiperItemPicture .vodContainer .xgplayer-controls {
+  height: 0px !important;
+}
+.swiper .swiperItemPicture .img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.swiper .swiperItemPicture .img .taro-img__mode-aspectfit {
+  margin: auto;
+}
+.swiper .swiperItemPicture .img .taro-img__mode-widthfix {
+  margin: auto;
+}

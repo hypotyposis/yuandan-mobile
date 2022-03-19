@@ -1,0 +1,244 @@
+.detailPage {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0vh;
+  overflow-x: hidden;
+}
+.detailPage .videoContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+.detailPage .videoContainer .floatArea {
+  position: absolute;
+  bottom: 50px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+.detailPage .author-bar {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 6vh;
+  justify-content: flex-start;
+  background-color: #fff;
+  margin-bottom: 0.5vh;
+}
+.detailPage .author-bar .avatar-container {
+  height: 100%;
+  line-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailPage .author-bar .avatar-container .at-avatar--small {
+  height: 5vh !important;
+  line-height: 5vh !important;
+  width: 5vh !important;
+}
+.detailPage .author-bar .avatar-container .avatar {
+  background-color: #022929;
+}
+.detailPage .author-bar .username {
+  font-weight: 200;
+  display: inline;
+  margin-left: 2vw;
+  font-size: small;
+  line-height: 6vh;
+  flex: 0.85;
+  font-family: 'Inter custom', sans-serif;
+}
+.detailPage .author-bar .followButton {
+  display: flex;
+  opacity: 0;
+  line-height: 6vh;
+  align-items: center;
+  justify-content: flex-end;
+}
+.detailPage .author-barV {
+  width: 20%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  line-height: 4.2vh;
+  justify-content: flex-start;
+}
+.detailPage .author-barV .avatar-containerV {
+  height: 100%;
+  line-height: 4.2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailPage .author-barV .avatar-containerV .at-avatar--small {
+  height: 4.2vh !important;
+  line-height: 4.2vh !important;
+  width: 4.2vh !important;
+  border: 0.3vh solid #fff;
+}
+.detailPage .author-barV .avatar-containerV .at-avatar--small .at-avatar__text {
+  color: #fff;
+}
+.detailPage .author-barV .avatar-containerV .avatarV {
+  background-color: #022929;
+}
+.detailPage .author-barV .usernameV {
+  font-weight: 200;
+  display: inline;
+  margin-left: 2.5vw;
+  font-size: large;
+  font-weight: 600;
+  line-height: 5vh;
+  flex: 0.85;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+}
+.detailPage .story {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+.detailPage .story .storyarea {
+  width: 95vw;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.detailPage .story .storyarea .storytitle {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}
+.detailPage .story .storyarea .storymain {
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detailPage .storyV {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailPage .storyV .storyareaV {
+  width: 90vw;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.detailPage .storyV .storyareaV .storytitleV {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}
+.detailPage .storyV .storyareaV .storytitleV .at-article__h3 {
+  color: #fff !important;
+}
+.detailPage .storyV .storyareaV .storymainV {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detailPage .storyV .storyareaV .storymainV .at-article__p {
+  color: #fff !important;
+  height: 100%;
+  font-size: medium;
+  margin-top: 0.8vh !important;
+  padding-left: 0.8vw;
+}
+.detailPage .recommendDivider {
+  margin-top: 5vh;
+}
+.detailPage .recommendDivider .at-divider__content {
+  font-size: small !important;
+  color: #ff2442 !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+.detailPage .recommendDividerV {
+  margin-top: 0vh;
+}
+.detailPage .recommendDividerV .at-divider__content {
+  font-size: small !important;
+  color: #ff2442 !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+.detailPage .recommendBox {
+  background-color: aliceblue;
+  width: 98vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1vw;
+}
+.detailPage .recommendBox .column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailPage .recommendBox .column .storyListContainer {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailPage .comments {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  font-size: small;
+  margin-left: 2vw;
+}
+.detailPage .comments .commentList {
+  width: 100%;
+  height: auto;
+}
+.detailPage .comments .commentList .ant-comment-avatar {
+  width: 50px !important;
+  height: 50px !important;
+}
+.detailPage .comments .addComment {
+  margin-bottom: 0%;
+}
+.detailPage .comments .addComment .ant-comment-avatar {
+  width: 50px !important;
+  height: 50px !important;
+}
+.detailPage .comments .addComment .addCommentArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.detailPage .comments .addComment .addCommentArea .addCommentButtonText {
+  color: antiquewhite !important;
+}
+.detailPage .comments .addComment .addCommentArea .commentInputArea {
+  border-color: #ff2442;
+  width: 100%;
+  display: inline-block;
+  overflow: auto;
+  outline: none;
+}
+.detailPage .comments .addComment .addCommentArea .addCommentButton {
+  background-color: #ff2442;
+  border-color: honeydew;
+}
+.detailPage .comments .addComment .addCommentArea .addCommentButton .addCommentButtonText {
+  color: antiquewhite !important;
+}
