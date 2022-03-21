@@ -13,6 +13,7 @@ export const Carousel: React.FC<CarouselProps> = ({ pictureArray, videoArray, si
   // console.log(document.body.offsetHeight)
   const windowHeight = document.body.offsetHeight;
   const windowWidth = document.body.offsetWidth;
+  const pageWidth = document.getElementById('detailPage')?.offsetWidth;
 
   // let ratio: number = 0;
   const [ratio, setRatio] = useState<number>(0);
@@ -28,14 +29,14 @@ export const Carousel: React.FC<CarouselProps> = ({ pictureArray, videoArray, si
         const width = targetImg.width;
         const height = targetImg.height;
         setRatio(height / width);
-        // console.log(width, height, ratio);
-        // console.log(windowWidth, ratio * windowWidth)
+        console.log(width, height, height / width);
+        console.log(pageWidth, windowWidth, ratio * (pageWidth || windowWidth))
       }
     };
     if (pictureArray.length !== 0) {
       getFirstPictureSize(pictureArray);
     }
-  }, [pictureArray, ratio, windowWidth])
+  }, [pictureArray, ratio, windowWidth, pageWidth])
 
   return (
     <Swiper
@@ -53,11 +54,12 @@ export const Carousel: React.FC<CarouselProps> = ({ pictureArray, videoArray, si
         </SwiperItem>
       ))}
       {pictureArray.map(r => (
-        <SwiperItem key={r} className='swiperItemPicture' style={{ height: (ratio === 0) ? '60vh' : `${ratio * windowWidth}px` }}>
-          <Img mode='aspectFit' className='img' src={r} />
-        </SwiperItem>
-      ))}
-    </Swiper>
+        <SwiperItem key={r} className='swiperItemPicture' style={{ height: (ratio === 0) ? '60vh' : `${ratio * (pageWidth || (windowWidth > 800 ? 800 : windowWidth))}px` }}>
+      <Img mode='aspectFit' className='img' src={r} />
+    </SwiperItem>
+  ))
+}
+    </Swiper >
   )
 }
 

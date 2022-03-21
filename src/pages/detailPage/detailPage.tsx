@@ -145,6 +145,8 @@ export const DetailPage: React.FC = () => {
                 // width: 'auto',
                 autoplay: true,
                 videoInit: true,
+                // fluid: true,
+                width: 800,
               });
               setVodPlayer(player);
             });
@@ -241,7 +243,7 @@ export const DetailPage: React.FC = () => {
   useDidHide(() => {
     console.log('componentDidHide');
     console.log(vodPlayer)
-    if (vodPlayer !== null){
+    if (vodPlayer !== null) {
       vodPlayer.pause();
     }
   })
@@ -368,7 +370,7 @@ export const DetailPage: React.FC = () => {
   </View>
 
   return (
-    <View className='detailPage' >
+    <View className='detailPage' id='detailPage'>
       {videoArray.length === 0 ? authorBar : null}
       <View className='videoContainer'>
         <Carousel pictureArray={pictureArray} videoArray={videoArray} sid={sid} />

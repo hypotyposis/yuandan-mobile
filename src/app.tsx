@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { View } from '@tarojs/components';
 import 'taro-ui/dist/style/index.scss'
 import { Provider } from 'react-redux';
 import rootStore from './redux/store';

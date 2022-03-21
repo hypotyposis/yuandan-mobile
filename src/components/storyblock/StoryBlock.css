@@ -46,6 +46,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  width: 70%;
 }
 .storyContainer .storyappend .user .userImageWrapper {
   width: 40px;
@@ -80,7 +81,7 @@
   height: 100%;
 }
 .storyContainer .storyappend .user .name {
-  width: 20vw;
+  width: 80%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
